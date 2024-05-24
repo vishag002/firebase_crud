@@ -12,12 +12,19 @@ class _CrudScreenState extends State<CrudScreen> {
   TextEditingController nameController = TextEditingController();
   TextEditingController ageController = TextEditingController();
   //save button
-  void saveButtton() {
-    setState(() {});
-    nameController.clear();
-    ageController.clear();
+  void saveButtton() async {
+    if (nameController.text.isNotEmpty && ageController.text.isNotEmpty) {
+      await employeeCollection.add({
+        'name': nameController.text,
+        'age': int.parse(ageController.text),
+      });
+      nameController.clear();
+      ageController.clear();
+    }
   }
+
   //add to fire base
+
   //edit function
 
   //delete function
