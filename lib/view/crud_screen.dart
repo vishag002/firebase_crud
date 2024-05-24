@@ -17,6 +17,7 @@ class _CrudScreenState extends State<CrudScreen> {
     nameController.clear();
     ageController.clear();
   }
+  //add to fire base
   //edit function
 
   //delete function
