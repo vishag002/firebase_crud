@@ -1,5 +1,6 @@
-import 'package:firebase_crud/view/crud_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'crud_new.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -30,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => CrudScreen(),
+                      builder: (context) => CrudScreenNew(),
                     ));
               },
               child: Container(
