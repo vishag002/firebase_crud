@@ -1,4 +1,4 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+/* import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class CrudScreen extends StatefulWidget {
@@ -30,8 +30,6 @@ class _CrudScreenState extends State<CrudScreen> {
   //delete function
 
   //fire base
-  CollectionReference employeeCollection =
-      FirebaseFirestore.instance.collection('employee');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,7 +74,7 @@ class _CrudScreenState extends State<CrudScreen> {
                       )),
                   style: ButtonStyle(
                       backgroundColor:
-                          MaterialStatePropertyAll(Colors.orangeAccent)),
+                          WidgetStatePropertyAll(Colors.orangeAccent)),
                 ),
               ),
               Divider(
@@ -211,4 +209,4 @@ class _CrudScreenState extends State<CrudScreen> {
           ),
         ));
   }
-}
+} */
